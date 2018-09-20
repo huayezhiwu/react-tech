@@ -1,0 +1,42 @@
+{
+  "name": "demo1tabs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "build": "webpack -p",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huayezhiwu/react-tech.git"
+  },
+  "author": "ye",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/huayezhiwu/react-tech/issues"
+  },
+  "homepage": "https://github.com/huayezhiwu/react-tech#readme",
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.2",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^1.0.0",
+    "react-hot-loader": "^4.3.8",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.0",
+    "webpack": "^4.19.1",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-middleware": "^3.3.0",
+    "webpack-dev-server": "^3.1.8",
+    "webpack-hot-middleware": "^2.24.0"
+  },
+  "dependencies": {
+    "babel": "^6.23.0"
+  }
+}
