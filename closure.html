@@ -1,0 +1,71 @@
+<html>
+    <style>
+        body {
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 12px;
+        }
+
+        h1 {
+            font-size: 1.5em;
+        }
+        h2 {
+            font-size: 1.2em;
+        }
+    </style>
+    <body>
+            <p>0</p>
+        
+            <a href="#" id="size-12">getValue</a><br/>
+            <input type="button" value="decrease" />
+            <br/><br/><br/><br/>
+            <p class="p1">0</p>
+        
+            <a class="a1" href="#" id="size-12">getValue</a><br/>
+            <input class="input1" type="button" value="decrease" />
+    </body>
+    <script>
+    var Counter = function(val){
+        var privateValue = val || 0;
+        return {
+            getVal: function(){
+                console.log(privateValue)
+                return privateValue;
+            }
+            , increaseVal: function(){
+                privateValue ++;
+            }
+            , decreaseVal: function(){
+                privateValue --;
+            }
+        }
+    }
+
+
+    let counter1 = Counter();
+    document.querySelector('a').onclick = function(){
+        counter1.increaseVal();
+        document.querySelector('p').innerHTML = counter1.getVal();
+    }
+    document.querySelector('input').onclick = function(){
+        counter1.decreaseVal();
+        document.querySelector('p').innerHTML = counter1.getVal();
+    }
+
+    let counter2 = Counter(5);
+    document.querySelector('.a1').onclick = function(){
+        counter2.increaseVal();
+        document.querySelector('.p1').innerHTML = counter2.getVal();
+    }
+    document.querySelector('.input1').onclick = function(){
+        counter2.decreaseVal();
+        document.querySelector('.p1').innerHTML = counter2.getVal();
+    }
+
+
+
+
+
+
+    
+    </script>
+</html>
