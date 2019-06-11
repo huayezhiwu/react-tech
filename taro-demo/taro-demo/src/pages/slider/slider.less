@@ -1,0 +1,31 @@
+.slider {
+    .tab-box {
+        display: flex;
+        width: 750px;
+        height: 100px;
+        background: #298DE5;
+        color: #8CCEFD;
+        font-size: 28px;
+        line-height: 100px;
+        box-shadow: 0 2px 2px #bebebe;
+        // margin: 0 0 8px 0;
+        z-index: 9999;
+        .tab-item {
+            flex: 1;
+            flex-direction: row;
+            text-align: center;
+            &.active {
+                color: #ffffff;
+                border-bottom: solid 2px #ffffff;
+            }
+        }
+    }
+    .slider-box {
+        width: 750px;
+        height: 375px;
+        .slider-img, img, image {
+            width: 750px;
+            height: 400px;
+        }
+    }
+}
